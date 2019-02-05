@@ -1,0 +1,34 @@
+.toggleButton{
+  display: inline-block;
+  background: #a6adac;
+  width: 52px;
+  height: 30px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.toggleButton:after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 1px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.toggleButton--checked {
+  background: #bada55;
+}
+
+.toggleButton--checked:after {
+  transform: translate(22px);
+}
+
+.control {
+  position: absolute;
+  left: -999px;
+}
